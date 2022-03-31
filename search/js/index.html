@@ -74,7 +74,7 @@
                 <a class="head">高级搜索</a>
                 <button id="close" title="关闭">X</button>
             
-                <form class="advance-form" action="https://www.baidu.com/s" target="_blank" name="f1" onsubmit="return validKey()" method="post">
+                <form action="https://www.baidu.com/s"target="_blank" name="f1" class="advance-form"  onsubmit="return validKey()" method="get">
                     <li class="keyword">搜索结果：
                         <a class="left-key1">
                             包含全部关键词 |
@@ -126,10 +126,10 @@
                     </li>    
                     <li>
                         站内搜索：<a class="color-grey">限定要搜索指定的网站是</a>
-                        <input name="q6" class="stand-right" id="xianding">
+                        <input type="text" name="q6" class="stand-right" id="xianding">
                     </li>
 
-                <input type="submit" value="高级搜索" class="advance-submitBtn">
+                    <input type="submit" value="高级搜索" class="advance-submitBtn">
                 </form>
                                 
             </div>
@@ -173,9 +173,25 @@
 
         <form action="https://graph.baidu.com/s" id="search-img" name="f">
             <a id="upload-area">拖拽图片到这里</a>
-            <input type="hidden" value="选择文件" />
             <input type="file" accept="image/*" id="upload" value="上传图片" onchange="autoSbumit()" />
             <a class="select-img">选择文件</a>
+            <!--
+                <input type="hidden" name="ie" value="utf-8">
+            <input type="hidden" name="f" value="8">
+            <input type="hidden" name="rsv_bp" value="1">
+            <input type="hidden" name="rsv_idx" value="1">
+            <input type="hidden" name="ch" value="">
+            <input type="hidden" name="tn" value="baidu">
+            <input type="hidden" name="bar" value="">
+            <input type="hidden" name="rn" value="">
+            <input type="hidden" name="fenlei" value="256">
+            <input type="hidden" name="oq" value="">
+            <input type="hidden" name="rsv_pq" value="d8bddf1400001c9a">
+            <input type="hidden" name="rsv_t" value="c93bxQToACUSgkjcCibwBEqeyeGzXgccRH1WdO6Q05itxpGcb9vZhB57Wdg">
+            <input type="hidden" name="rqlang" value="cn">
+            <input type="hidden" name="rsv_dl" value="ib">
+            <input type="hidden" name="rsv_enter" value="1">
+            -->
         </form>
         
 
